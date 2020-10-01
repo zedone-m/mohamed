@@ -23,8 +23,8 @@ class Free:
       k=random.choice(myList)
       c=c+k
     return c
- def exploiting():
-    driver = webdriver.Chrome(drive)
+ def exploiting(self):
+    driver = webdriver.Chrome(self.drive)
     browser=driver.get(link)
     time.sleep(4.2)
     driver.refresh()
