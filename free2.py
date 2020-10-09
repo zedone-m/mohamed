@@ -28,10 +28,9 @@ class Free:
     driver.refresh()
     while True:
      try:
-      a=Free.randome()
       b=Free.randome()
       c=Free.randome()
-      driver.find_element_by_id("input_serial_1").send_keys(a)
+      driver.find_element_by_id("input_serial_1").send_keys("8FF8")
       driver.find_element_by_id("input_serial_2").send_keys(b)
       driver.find_element_by_id("input_serial_3").send_keys(c)
       driver.find_element_by_class_name("confirm-btn").click()
