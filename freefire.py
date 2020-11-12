@@ -9,6 +9,7 @@ from free2 import Free
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from colorama import Fore
 try:
   os.system("clear")
 except:
@@ -33,7 +34,7 @@ def prBlack(skk):
 prCyan('''
     "welcome to my free fire cracking tool"
 ''')
-prRed('''
+print(Fore.RED+'''
 
  ______ _______ ______         _____  __   _ _______
   ____/ |______ |     \       |     | | \  | |______
