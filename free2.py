@@ -4,6 +4,7 @@ import time
 import requests
 from multiprocessing.dummy import Pool
 from multiprocessing import Lock
+from tkinter.filedialog import askopenfile
 try:
   import numpy as np
 except ImportError:
@@ -17,9 +18,14 @@ class Free:
    self.drive=drive
    self.token=token
    link= link+token
+   self.proxy= askopenfile(title="Choose Your ProxyList FileName:",filetypes =[('Text Files', '*.txt')])
    self.link=link
    time.sleep(2)
-   self.li_st=np.arange(20000)
+   self.li_st=np.arange(20000)    
+ def generate_proxy(self,proxy):
+    self.proxy=proxy
+    lines = self.open(self.proxy.name).read().splitlines()
+    return random.choice(lines)
  def randome():
     myList=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9']
     c=""
@@ -30,7 +36,10 @@ class Free:
       c=c+k
     return c
  def exploiting(self,X):
-    driver = webdriver.Chrome(self.drive)
+    PROXY= self.generate_proxy(self.proxy)
+    options= webdriver.ChromeOptions()
+    options.add_argument('--proxy-server=%s' % PROXY)
+    driver = webdriver.Chrome(self.drive, options=options)
     browser=driver.get(self.link)
     time.sleep(4.2)
     driver.refresh()
@@ -55,8 +64,7 @@ class Free:
       print("a problem had popped out :")
  def multiprocessing(self):
       pool= Pool(5)
-      pool.imap(exploiting,self.li_st)
+      pool.map(exploiting,self.li_st)
 #      print("you tried",s, "times")
 #     s=s+1
 # exploiting(link,s)
--
