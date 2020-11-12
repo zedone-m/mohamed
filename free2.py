@@ -2,7 +2,14 @@ from selenium import webdriver
 import random
 import time
 import requests
-import numpy as np
+from multiprocessing.dummy import Pool
+from multiprocessing import Lock
+try:
+  import numpy as np
+except ImportError:
+  import os
+  os.system("pip install numpy")
+  import numpy as np
 s=0
 class Free:
  def __init__(self,drive,token,link="https://reward.ff.garena.com/?access_token="):
@@ -52,3 +59,4 @@ class Free:
 #      print("you tried",s, "times")
 #     s=s+1
 # exploiting(link,s)
+-
