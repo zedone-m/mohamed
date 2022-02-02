@@ -1,0 +1,7 @@
+ Carrier checker : Carrier
+ MxSoter : MXSorter
+ Zero Bounce : EmailVER
+ Multi Validator : Multi
+ Office Validator : Office
+ Contact extractor : Contact
+ CPanel Checker : cPanel
