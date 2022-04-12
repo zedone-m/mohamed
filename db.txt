@@ -5,3 +5,4 @@
  Office Validator : Office
  Contact extractor : Contact
  CPanel Checker : cPanel
+ Letter Encryptor : encLE
