@@ -7,3 +7,4 @@
  CPanel Checker : cPanel
  Letter Encryptor : encLE
  Smtp to Sms : SWE
+ Mailgun : mailgun
