@@ -8,3 +8,6 @@
  Smtp to Sms : SWE
  Mailgun : mailgun
  Phone Generator : NumberVer
+ Amazon : amazon
+ Gmail : gmail
+ Hotmal : hotmail
