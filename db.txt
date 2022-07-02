@@ -11,3 +11,4 @@
  Amazon : amazon
  Gmail : gmail
  Hotmal : hotmail
+ Carrier Checker : Carrier
