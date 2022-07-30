@@ -12,3 +12,4 @@
  Gmail : gmail
  Hotmal : hotmail
  Carrier Checker : Carrier
+ xCarrier Checker : XCARRIER
