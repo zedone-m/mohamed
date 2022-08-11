@@ -14,3 +14,4 @@
  Carrier Checker : Carrier
  xCarrier Checker : XCARRIER
  GSM Modem Sender (private) : GSM
+ Private Sender : sender
