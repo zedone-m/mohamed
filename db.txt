@@ -16,3 +16,4 @@
  GSM Modem Sender (private) : GSM
  Private Sender : sender
  Private Azure : azure
+ George Sender : georgie
